@@ -1,0 +1,39 @@
+{
+  "id": "mig_cnbq1uudvqngjhof21n0",
+  "parentID": "mig_cnbpv0tvema2e5dopjr0",
+  "checksum": "1:0f3697dcb20945c738bb4998a439b4db3c24757936428287f48a089c29378fc8",
+  "operations": [
+    {
+      "addTable": {
+        "table": "options_corrected"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency",
+          "type": "string"
+        },
+        "table": "options_corrected"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "option",
+          "type": "string"
+        },
+        "table": "options_corrected"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "payment_method",
+          "type": "string"
+        },
+        "table": "options_corrected"
+      }
+    }
+  ]
+}

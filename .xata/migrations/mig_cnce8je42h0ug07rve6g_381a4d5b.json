@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnce8je42h0ug07rve6g",
+  "parentID": "mig_cnce7lu42h0ug07rve4g",
+  "checksum": "1:381a4d5bc802b0fd425d70ff1ac4ec663abbde95e75b84c3f8a9975d09b5d31d",
+  "operations": [
+    {
+      "addTable": {
+        "table": "payment_role"
+      }
+    }
+  ]
+}

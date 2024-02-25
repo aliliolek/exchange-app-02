@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnceml0elaf56a40tnqg",
+  "parentID": "mig_cncem3gelaf56a40tnpg",
+  "checksum": "1:391726bb8cd4b28f19d36debc09e709ebb60a36db9b2769859e961a5c5506f8c",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "method",
+        "oldName": "payment_method"
+      }
+    }
+  ]
+}

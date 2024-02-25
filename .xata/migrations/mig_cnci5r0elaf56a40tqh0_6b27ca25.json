@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnci5r0elaf56a40tqh0",
+  "parentID": "mig_cnci5o0elaf56a40tqg0",
+  "checksum": "1:6b27ca25e87305acb843989126c6594b52ced26594d7ccb0cbf8c9cbf2ccb788",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "city",
+        "table": "currencies"
+      }
+    }
+  ]
+}

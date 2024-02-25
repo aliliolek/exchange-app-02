@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnbpscdvema2e5dopjog",
+  "parentID": "mig_cnbps6n5luj6iq2bbh80",
+  "checksum": "1:f0f2d0399c2e58157002e03a8178b8b7433a4ef8fcce49427558d579200c87fe",
+  "operations": [
+    {
+      "addTable": {
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "code",
+          "type": "string"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

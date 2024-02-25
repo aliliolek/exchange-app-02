@@ -1,0 +1,14 @@
+{
+  "id": "mig_cnchb18elaf56a40tpmg",
+  "parentID": "mig_cnchav8elaf56a40tplg",
+  "checksum": "1:7b907ef697ee17e901761a171bf37d5db3f033d085193e1bb7905376331fb98b",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "user",
+        "oldName": "userId",
+        "table": "transactions"
+      }
+    }
+  ]
+}

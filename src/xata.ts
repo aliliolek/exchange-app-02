@@ -8,19 +8,123 @@ import type {
 
 const tables = [
   {
-    name: "folders",
-    columns: [{ name: "name", type: "string", unique: true }],
+    name: "option",
+    columns: [
+      { name: "xatacreatedAt", type: "datetime" },
+      { name: "xataupdatedAt", type: "datetime" },
+      { name: "xataversion", type: "int" },
+      { name: "currency", type: "string" },
+      { name: "option", type: "string" },
+      { name: "payment_method", type: "string" },
+    ],
   },
+  { name: "networks2", columns: [{ name: "name", type: "string" }] },
+  { name: "banks", columns: [{ name: "name", type: "string" }] },
+  {
+    name: "details",
+    columns: [
+      { name: "type", type: "string" },
+      { name: "method", type: "string" },
+      { name: "currencyId", type: "int" },
+      { name: "optionId", type: "int" },
+      { name: "optionType", type: "string" },
+      { name: "accountNumber", type: "int" },
+      { name: "ownerName", type: "string" },
+      { name: "walletAddress", type: "string" },
+    ],
+    revLinks: [
+      { column: "fromDetails", table: "transactions" },
+      { column: "toDetails", table: "transactions" },
+    ],
+  },
+  {
+    name: "users",
+    columns: [
+      { name: "fullName", type: "string" },
+      { name: "email", type: "email" },
+      { name: "phone", type: "int" },
+      { name: "telegram", type: "string" },
+      { name: "passHash", type: "string" },
+      { name: "role", type: "string" },
+    ],
+    revLinks: [
+      { column: "user", table: "transactions" },
+      { column: "admin", table: "transactions" },
+    ],
+  },
+  {
+    name: "transactions",
+    columns: [
+      { name: "serviceDetailsId", type: "int" },
+      { name: "fromAmount", type: "int" },
+      { name: "toAmount", type: "int" },
+      { name: "termsAndConditions", type: "bool" },
+      { name: "rate", type: "float" },
+      { name: "commercialRate", type: "float" },
+      { name: "status", type: "string" },
+      { name: "step", type: "int" },
+      { name: "createdAt", type: "datetime" },
+      { name: "user", type: "link", link: { table: "users" } },
+      { name: "admin", type: "link", link: { table: "users" } },
+      { name: "fromDetails", type: "link", link: { table: "details" } },
+      { name: "toDetails", type: "link", link: { table: "details" } },
+    ],
+  },
+  {
+    name: "currencies",
+    columns: [
+      { name: "code", type: "string" },
+      { name: "name", type: "string" },
+      { name: "cities", type: "multiple" },
+      { name: "method", type: "multiple" },
+      { name: "networks", type: "multiple" },
+      { name: "banks", type: "multiple" },
+    ],
+  },
+  { name: "methods", columns: [{ name: "name", type: "string" }] },
+  { name: "cities", columns: [{ name: "name", type: "string" }] },
 ] as const;
 
 export type SchemaTables = typeof tables;
 export type InferredTypes = SchemaInference<SchemaTables>;
 
-export type Folders = InferredTypes["folders"];
-export type FoldersRecord = Folders & XataRecord;
+export type Option = InferredTypes["option"];
+export type OptionRecord = Option & XataRecord;
+
+export type Networks2 = InferredTypes["networks2"];
+export type Networks2Record = Networks2 & XataRecord;
+
+export type Banks = InferredTypes["banks"];
+export type BanksRecord = Banks & XataRecord;
+
+export type Details = InferredTypes["details"];
+export type DetailsRecord = Details & XataRecord;
+
+export type Users = InferredTypes["users"];
+export type UsersRecord = Users & XataRecord;
+
+export type Transactions = InferredTypes["transactions"];
+export type TransactionsRecord = Transactions & XataRecord;
+
+export type Currencies = InferredTypes["currencies"];
+export type CurrenciesRecord = Currencies & XataRecord;
+
+export type Methods = InferredTypes["methods"];
+export type MethodsRecord = Methods & XataRecord;
+
+export type Cities = InferredTypes["cities"];
+export type CitiesRecord = Cities & XataRecord;
 
 export type DatabaseSchema = {
-  folders: FoldersRecord;
+  option: OptionRecord;
+  networks2: Networks2Record;
+  banks: BanksRecord;
+  details: DetailsRecord;
+  users: UsersRecord;
+  transactions: TransactionsRecord;
+  currencies: CurrenciesRecord;
+  methods: MethodsRecord;
+  cities: CitiesRecord;
 };
 
 const DatabaseClient = buildClient();

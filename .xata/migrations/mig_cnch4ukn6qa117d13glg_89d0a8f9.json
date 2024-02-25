@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnch4ukn6qa117d13glg",
+  "parentID": "mig_cnch4rsn6qa117d13gkg",
+  "checksum": "1:89d0a8f9b0e9e5d1f0b174acaef75f06be98acd3b0e59be0dd1a8787b6691fbc",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "banks",
+        "oldName": "banknames"
+      }
+    }
+  ]
+}

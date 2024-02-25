@@ -1,0 +1,19 @@
+{
+  "id": "mig_cnch8osn6qa117d13grg",
+  "parentID": "mig_cnch8hcn6qa117d13gqg",
+  "checksum": "1:e66e4549e80c0e84a61275b299d69c2d16469cfaccab622eaffac91c1f3840a1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "userId",
+          "type": "link",
+          "link": {
+            "table": "users"
+          }
+        },
+        "table": "transactions"
+      }
+    }
+  ]
+}

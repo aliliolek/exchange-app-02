@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnch3ngelaf56a40tp70",
+  "parentID": "mig_cnch3kgelaf56a40tp4g",
+  "checksum": "1:7d467ff721a2fe77c85d1ef752248e0a23db65009f7d469f52df314960e44db8",
+  "operations": [
+    {
+      "addTable": {
+        "table": "networks2"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "networks2"
+      }
+    }
+  ]
+}

@@ -1,44 +1,61 @@
-import { getExchangeRateLocal } from "@/api/exchangeRateLocal";
-import { TransactionDetails } from "@/types";
+import { getExchangeRateBinance } from '@/pages/api/exchangeRateAPIbinance';
+import { PaymentDirection, PaymentMethodType, Transaction } from '@/types/new';
 
-interface CalcExchangeValuesParams {
-    details: Partial<TransactionDetails>;
-    lastField: 'amountFrom' | 'amountTo';
-}
+export const calcExchangeValues = async (
+  transaction: Transaction,
+  setTransaction: React.Dispatch<React.SetStateAction<Transaction>>,
+  setIsLoadingFrom: React.Dispatch<React.SetStateAction<boolean>>,
+  setIsLoadingTo: React.Dispatch<React.SetStateAction<boolean>>
+) => {
+  if (transaction.lastFocusedField === PaymentDirection.From) {
+    setIsLoadingTo(true);
+  }
+  if (transaction.lastFocusedField === PaymentDirection.To) {
+    setIsLoadingFrom(true);
+  }
 
-interface CalcExchangeResult {
-    amountFrom?: number;
-    amountTo?: number;
-    rate: number;
-}
+  const momentRate = await getExchangeRateBinance(
+    transaction.fromDetails.currency,
+    transaction.toDetails.currency
+  );
+  setTransaction((prev) => ({
+    ...prev,
+  }));
 
+  let result = 0;
+  const commercialRate = momentRate - momentRate * 0.07;
 
-export const calcExchangeValues = async ({
-    details:{
-    amountFrom = 0,
-    amountTo = 0,
-    currencyFrom,
-    currencyTo,
-},
-    lastField,
-}: CalcExchangeValuesParams): Promise<CalcExchangeResult> => {
+  if (transaction.lastFocusedField === PaymentDirection.From) {
+    result = transaction.fromAmount * commercialRate;
 
-    const momentRate = await getExchangeRateLocal(currencyFrom, currencyTo);
-    let result = 0;
-    const commercialRate = momentRate - momentRate * 0.07;
-
-    if (lastField === 'amountFrom') {
-        result = amountFrom * commercialRate;
-        return {
-            amountTo: +result.toFixed(2),
-            rate: commercialRate,
-        };
+    if (transaction.toDetails.methodType === PaymentMethodType.CryptoWallet) {
+      result = +result.toFixed(6);
     } else {
-        result = amountTo / commercialRate;
-        
-        return {
-            amountFrom: +result.toFixed(2),
-            rate: commercialRate,
-        };
+      result = +result.toFixed(2);
     }
+
+    setTransaction((prev) => ({
+      ...prev,
+      commercialRate,
+      toAmount: result,
+    }));
+
+    setIsLoadingTo(false);
+  } else {
+    result = transaction.toAmount / commercialRate;
+
+    if (transaction.fromDetails.methodType === PaymentMethodType.CryptoWallet) {
+      result = +result.toFixed(6);
+    } else {
+      result = +result.toFixed(2);
+    }
+
+    setTransaction((prev) => ({
+      ...prev,
+      commercialRate,
+      fromAmount: +result.toFixed(6),
+    }));
+
+    setIsLoadingFrom(false);
+  }
 };

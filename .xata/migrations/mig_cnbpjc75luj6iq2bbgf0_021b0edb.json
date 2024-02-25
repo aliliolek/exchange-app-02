@@ -1,0 +1,30 @@
+{
+  "id": "mig_cnbpjc75luj6iq2bbgf0",
+  "parentID": "mig_cnbpj3lvema2e5dopja0",
+  "checksum": "1:021b0edb221f3e142bf6e2e6f7bad832de8c73b68e72bb550514bd1d530aa2a5",
+  "operations": [
+    {
+      "addTable": {
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "code",
+          "type": "string"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "method_id",
+          "type": "int"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

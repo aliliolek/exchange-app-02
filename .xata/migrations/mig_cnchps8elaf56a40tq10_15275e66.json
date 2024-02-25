@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnchps8elaf56a40tq10",
+  "parentID": "mig_cnchoc0rm9bok9ak72bg",
+  "checksum": "1:15275e6607aca6cfbb1d92cbc4fa0ce77d40e780ec9a6a34a5163fdef3434892",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "isAvailableForCash",
+        "table": "currencies"
+      }
+    }
+  ]
+}

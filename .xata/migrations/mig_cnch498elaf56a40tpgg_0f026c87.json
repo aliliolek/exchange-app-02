@@ -1,0 +1,66 @@
+{
+  "id": "mig_cnch498elaf56a40tpgg",
+  "parentID": "mig_cnch458elaf56a40tpf0",
+  "checksum": "1:0f026c8772abba9aa9a61a8ab011e87384669c7c3553e611d02c3b80a47da261",
+  "operations": [
+    {
+      "addTable": {
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "code",
+          "type": "string"
+        },
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "type",
+          "type": "string"
+        },
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCash",
+          "type": "bool"
+        },
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCard",
+          "type": "bool"
+        },
+        "table": "currencies_with_methods1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCrypto",
+          "type": "bool"
+        },
+        "table": "currencies_with_methods1"
+      }
+    }
+  ]
+}

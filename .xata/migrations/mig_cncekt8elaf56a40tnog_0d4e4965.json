@@ -1,0 +1,75 @@
+{
+  "id": "mig_cncekt8elaf56a40tnog",
+  "parentID": "mig_cnceh20elaf56a40tnm0",
+  "checksum": "1:0d4e496502a0f790395f4bd59e2fd0eee4591c375c52f1bdbc513552f6e03435",
+  "operations": [
+    {
+      "addTable": {
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "method",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "option",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "bank",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "accountNumber",
+          "type": "int"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "ownerName",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "walletAddress",
+          "type": "string"
+        },
+        "table": "details_extended"
+      }
+    }
+  ]
+}

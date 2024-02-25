@@ -1,0 +1,66 @@
+{
+  "id": "mig_cnch3fgelaf56a40tp30",
+  "parentID": "mig_cnch2qgelaf56a40tp1g",
+  "checksum": "1:33adabae13df6f59f1a288a3ce5383c76115c9cd385e6ebca838e28661461c4a",
+  "operations": [
+    {
+      "addTable": {
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "xatacreatedAt",
+          "type": "datetime"
+        },
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "xataupdatedAt",
+          "type": "datetime"
+        },
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "xataversion",
+          "type": "int"
+        },
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency",
+          "type": "string"
+        },
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "option",
+          "type": "string"
+        },
+        "table": "option"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "payment_method",
+          "type": "string"
+        },
+        "table": "option"
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "id": "mig_cnbpoln5luj6iq2bbgm0",
+  "parentID": "mig_cnbpogf5luj6iq2bbgkg",
+  "checksum": "1:e71afc8f7e1e3dccf97202533efea7b142feae597fab119434dbe6841d3fa863",
+  "operations": [
+    {
+      "addTable": {
+        "table": "networks"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "networks"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency_id",
+          "type": "int"
+        },
+        "table": "networks"
+      }
+    }
+  ]
+}

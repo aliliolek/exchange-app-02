@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnch944n6qa117d13gsg",
+  "parentID": "mig_cnch8osn6qa117d13grg",
+  "checksum": "1:753ec35fb2476becf5f835267a157493742ff8be3eafc5691b0a8814b96fa0e7",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "adminId",
+        "table": "transactions"
+      }
+    }
+  ]
+}

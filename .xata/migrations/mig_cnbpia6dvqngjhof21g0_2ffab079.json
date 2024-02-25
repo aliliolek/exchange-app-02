@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnbpia6dvqngjhof21g0",
+  "parentID": "mig_cnbphrf5luj6iq2bbg60",
+  "checksum": "1:2ffab079708c972fb4cd43fa0252d8affeedc75a8ac8ddc80e520e20f51e9632",
+  "operations": [
+    {
+      "addTable": {
+        "table": "payment_methods"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "type",
+          "type": "string"
+        },
+        "table": "payment_methods"
+      }
+    }
+  ]
+}

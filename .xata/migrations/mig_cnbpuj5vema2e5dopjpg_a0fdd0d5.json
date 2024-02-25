@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnbpuj5vema2e5dopjpg",
+  "parentID": "mig_cnbpscdvema2e5dopjog",
+  "checksum": "1:a0fdd0d56359e2c98592e6a17f1fe8bb33dfe8eec8f08ce54feb7da76acb810b",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "payment_options"
+      }
+    }
+  ]
+}

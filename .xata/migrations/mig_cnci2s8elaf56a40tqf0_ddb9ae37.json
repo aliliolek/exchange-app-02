@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnci2s8elaf56a40tqf0",
+  "parentID": "mig_cnci298elaf56a40tqdg",
+  "checksum": "1:ddb9ae372d4ba0dd1d5b73652426ea1fa63bb984a0ee15632c16c17b40ff2bb5",
+  "operations": [
+    {
+      "addTable": {
+        "table": "cities"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "cities"
+      }
+    }
+  ]
+}

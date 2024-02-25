@@ -1,0 +1,14 @@
+{
+  "id": "mig_cnchbb0elaf56a40tpng",
+  "parentID": "mig_cnchb3kn6qa117d13h1g",
+  "checksum": "1:89e90b4fba704ad5d160f43f004ee440e8336e63cec03ef91a199292d541265a",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "toDetails",
+        "oldName": "toDetailsId",
+        "table": "transactions"
+      }
+    }
+  ]
+}

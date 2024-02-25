@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnce8mu42h0ug07rve7g",
+  "parentID": "mig_cnce8je42h0ug07rve6g",
+  "checksum": "1:175a4dc13dcf7d1e477e3ffb267c38e40373b22d02dba36304b4e0d4c80346c9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "role",
+          "type": "string"
+        },
+        "table": "payment_role"
+      }
+    }
+  ]
+}

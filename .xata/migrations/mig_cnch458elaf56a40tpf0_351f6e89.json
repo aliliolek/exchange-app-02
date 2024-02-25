@@ -1,0 +1,138 @@
+{
+  "id": "mig_cnch458elaf56a40tpf0",
+  "parentID": "mig_cnch42oelaf56a40tpdg",
+  "checksum": "1:351f6e89b25919ce5dbd3b952414c80d40eed3eea3e686d99a94b6c0925f098e",
+  "operations": [
+    {
+      "addTable": {
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "userId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "adminId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "fromDetailsId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "toDetailsId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "serviceDetailsId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "fromAmount",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "toAmount",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "termsAndConditions",
+          "type": "bool"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "rate",
+          "type": "float"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "commercialRate",
+          "type": "float"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "contactsId",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "step",
+          "type": "int"
+        },
+        "table": "transactions1"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "createdAt",
+          "type": "datetime"
+        },
+        "table": "transactions1"
+      }
+    }
+  ]
+}

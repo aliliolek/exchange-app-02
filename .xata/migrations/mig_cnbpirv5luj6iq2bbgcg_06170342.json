@@ -1,0 +1,30 @@
+{
+  "id": "mig_cnbpirv5luj6iq2bbgcg",
+  "parentID": "mig_cnbpip75luj6iq2bbgb0",
+  "checksum": "1:06170342410bbe5c1998f5727b52eec48d81f644d966437e54afccee450e446b",
+  "operations": [
+    {
+      "addTable": {
+        "table": "cities"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "cities"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency_id",
+          "type": "int"
+        },
+        "table": "cities"
+      }
+    }
+  ]
+}

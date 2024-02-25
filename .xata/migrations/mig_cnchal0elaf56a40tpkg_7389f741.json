@@ -1,0 +1,19 @@
+{
+  "id": "mig_cnchal0elaf56a40tpkg",
+  "parentID": "mig_cnchah4n6qa117d13h0g",
+  "checksum": "1:7389f7413c534163cba63e8247faa7f3739bdfd4f6cbd73c9d7e5de8cb618107",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "toDetailsId",
+          "type": "link",
+          "link": {
+            "table": "details"
+          }
+        },
+        "table": "transactions"
+      }
+    }
+  ]
+}

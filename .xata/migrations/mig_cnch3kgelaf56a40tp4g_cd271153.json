@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnch3kgelaf56a40tp4g",
+  "parentID": "mig_cnch3fgelaf56a40tp30",
+  "checksum": "1:cd2711530c20d3e335466634c5cc950225eab1766bba4425c0c79a66b87964e6",
+  "operations": [
+    {
+      "addTable": {
+        "table": "cities2"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "cities2"
+      }
+    }
+  ]
+}

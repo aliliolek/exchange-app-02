@@ -1,0 +1,66 @@
+{
+  "id": "mig_cnchcboelaf56a40tpv0",
+  "parentID": "mig_cnchc5oelaf56a40tpsg",
+  "checksum": "1:7a27420dd14fb7dd25a35979da0ead5de5955a70255ced931e14f64b5c0740a9",
+  "operations": [
+    {
+      "addTable": {
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "code",
+          "type": "string"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "type",
+          "type": "string"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCash",
+          "type": "bool"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCard",
+          "type": "bool"
+        },
+        "table": "currencies"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "isAvailableForCrypto",
+          "type": "bool"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cncen0gelaf56a40tnsg",
+  "parentID": "mig_cncemt0elaf56a40tnrg",
+  "checksum": "1:a2ee613eb19fcf9c1bb78fdb7207c71bf5ca1d1514f47821ef45dcab99e3516b",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "option",
+        "oldName": "options_corrected"
+      }
+    }
+  ]
+}

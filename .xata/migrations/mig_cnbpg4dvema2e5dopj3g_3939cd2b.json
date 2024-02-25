@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnbpg4dvema2e5dopj3g",
+  "parentID": "mig_cnbpg05vema2e5dopj20",
+  "checksum": "1:3939cd2bd27b48f0facad4ed867ba32d0029302ce4c74f63200badf645dd38ac",
+  "operations": [
+    {
+      "addTable": {
+        "table": "PaymentMethods"
+      }
+    }
+  ]
+}

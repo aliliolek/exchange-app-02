@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnchpu0rm9bok9ak72cg",
+  "parentID": "mig_cnchpt0elaf56a40tq20",
+  "checksum": "1:2ca3247033353436739d9201de128183ea9a5a1677cfe43cb3f42bd2b7a645fc",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "isAvailableForCrypto",
+        "table": "currencies"
+      }
+    }
+  ]
+}

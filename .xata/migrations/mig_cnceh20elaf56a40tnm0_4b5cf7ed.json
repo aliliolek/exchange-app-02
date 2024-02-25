@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnceh20elaf56a40tnm0",
+  "parentID": "mig_cnceeosn6qa117d13ftg",
+  "checksum": "1:4b5cf7ed8cf69ecd86208be13ea665143f3498d89ba944ea14af396cb7433fc5",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "method",
+          "type": "multiple"
+        },
+        "table": "details"
+      }
+    }
+  ]
+}

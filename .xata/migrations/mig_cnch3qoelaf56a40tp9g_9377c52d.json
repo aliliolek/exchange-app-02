@@ -1,0 +1,21 @@
+{
+  "id": "mig_cnch3qoelaf56a40tp9g",
+  "parentID": "mig_cnch3ngelaf56a40tp70",
+  "checksum": "1:9377c52d307031d0aee1bf13b5cbdaf6c3f2f6eab6c6f68de9e58135dd9f9cd5",
+  "operations": [
+    {
+      "addTable": {
+        "table": "banknames"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "name",
+          "type": "string"
+        },
+        "table": "banknames"
+      }
+    }
+  ]
+}

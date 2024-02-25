@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnchutgelaf56a40tqag",
+  "parentID": "mig_cnchsakn6qa117d13h50",
+  "checksum": "1:9ec261d7f045246fccd2a2d6bb5379d158ef65eec1e2ce66577d8433c81962e7",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "test",
+          "type": "multiple"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

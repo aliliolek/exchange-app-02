@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnchbm8elaf56a40tpog",
+  "parentID": "mig_cnchbb0elaf56a40tpng",
+  "checksum": "1:a33f61df58d7e66f0acd477cb5993589fde3babb0a8c6bf940b38db7b0151c5b",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "contactsId",
+        "table": "transactions"
+      }
+    }
+  ]
+}

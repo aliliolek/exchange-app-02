@@ -1,0 +1,66 @@
+{
+  "id": "mig_cnch42oelaf56a40tpdg",
+  "parentID": "mig_cnch3v0elaf56a40tpc0",
+  "checksum": "1:8f4b04bd74f573ed9d67551a1e5d93d274d07d62ee9fc449fc87bb864945bbdb",
+  "operations": [
+    {
+      "addTable": {
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "fullName",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "email",
+          "type": "email"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "phone",
+          "type": "int"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "telegram",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "passHash",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "role",
+          "type": "string"
+        },
+        "table": "users"
+      }
+    }
+  ]
+}

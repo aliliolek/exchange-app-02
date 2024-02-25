@@ -1,0 +1,14 @@
+{
+  "id": "mig_cnchav8elaf56a40tplg",
+  "parentID": "mig_cnchal0elaf56a40tpkg",
+  "checksum": "1:ac04a10c51adab6ec386765ce3549fef9e1146c9cd399821c015e5c162c553cd",
+  "operations": [
+    {
+      "renameColumn": {
+        "newName": "admin",
+        "oldName": "adminId",
+        "table": "transactions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cncia10rm9bok9ak72m0",
+  "parentID": "mig_cnci920elaf56a40tqmg",
+  "checksum": "1:dd3914dc4796bfa587081b3d42ce436dab10b9a7635ca1a41b07e162b9600bb9",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "banks",
+          "type": "multiple"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

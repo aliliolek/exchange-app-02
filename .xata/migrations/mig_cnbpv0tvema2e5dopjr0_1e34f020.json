@@ -1,0 +1,30 @@
+{
+  "id": "mig_cnbpv0tvema2e5dopjr0",
+  "parentID": "mig_cnbpuj5vema2e5dopjpg",
+  "checksum": "1:1e34f020a9006d54d068a215bf7591d982ff12d428a4febe26aae7e1d2dce5a8",
+  "operations": [
+    {
+      "addTable": {
+        "table": "payment_options"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "currency",
+          "type": "string"
+        },
+        "table": "payment_options"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "option",
+          "type": "string"
+        },
+        "table": "payment_options"
+      }
+    }
+  ]
+}

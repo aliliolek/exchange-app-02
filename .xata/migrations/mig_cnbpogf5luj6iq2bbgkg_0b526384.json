@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnbpogf5luj6iq2bbgkg",
+  "parentID": "mig_cnbpjc75luj6iq2bbgf0",
+  "checksum": "1:0b5263840601ee8e68c0337fe71f663176bdcdccafbab4e6bdd64af50b888b36",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "networks"
+      }
+    }
+  ]
+}

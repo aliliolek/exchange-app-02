@@ -1,0 +1,12 @@
+{
+  "id": "mig_cnci298elaf56a40tqdg",
+  "parentID": "mig_cnci0dgrm9bok9ak72h0",
+  "checksum": "1:f5a6581f74161fbc3cf8c9fe6946b39c9804620d0d04a93fd04ca6855f325fc8",
+  "operations": [
+    {
+      "removeTable": {
+        "table": "cities"
+      }
+    }
+  ]
+}

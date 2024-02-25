@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnci7bgelaf56a40tqj0",
+  "parentID": "mig_cnci78orm9bok9ak72k0",
+  "checksum": "1:062246f78bf8a793296927dc10d60ccac7a8db01b3413d54ea3ad830342800c0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "method",
+          "type": "multiple"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}

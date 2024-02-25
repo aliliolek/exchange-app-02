@@ -1,0 +1,102 @@
+{
+  "id": "mig_cnce20bk742esoa3sgsg",
+  "parentID": "mig_cnce1k3k742esoa3sgq0",
+  "checksum": "1:2dcc85929ebe72d3c3196ba09c0ec96f24d53b33ce3d51c8dac7f7371fe1e3d3",
+  "operations": [
+    {
+      "addTable": {
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "user_id",
+          "type": "int"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "admin_id",
+          "type": "int"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "from_amount",
+          "type": "int"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "to_amount",
+          "type": "int"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "rate",
+          "type": "float"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "commercial_rate",
+          "type": "float"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "string"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "step",
+          "type": "int"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "created_at",
+          "type": "datetime"
+        },
+        "table": "transactions"
+      }
+    },
+    {
+      "addColumn": {
+        "column": {
+          "name": "paid_at",
+          "type": "datetime"
+        },
+        "table": "transactions"
+      }
+    }
+  ]
+}

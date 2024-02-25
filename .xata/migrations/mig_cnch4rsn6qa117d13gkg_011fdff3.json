@@ -1,0 +1,13 @@
+{
+  "id": "mig_cnch4rsn6qa117d13gkg",
+  "parentID": "mig_cnch498elaf56a40tpgg",
+  "checksum": "1:011fdff32f994a29b6bda872222207e09c451413874dac0059db5868d3b4c964",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "cities",
+        "oldName": "cities2"
+      }
+    }
+  ]
+}

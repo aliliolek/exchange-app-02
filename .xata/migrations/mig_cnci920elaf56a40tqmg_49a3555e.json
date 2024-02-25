@@ -1,0 +1,16 @@
+{
+  "id": "mig_cnci920elaf56a40tqmg",
+  "parentID": "mig_cnci7bgelaf56a40tqj0",
+  "checksum": "1:49a3555e6c45892e1975db693006b88929f3df9b2f86f8fddfd98a73827b0bce",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "networks",
+          "type": "multiple"
+        },
+        "table": "currencies"
+      }
+    }
+  ]
+}
