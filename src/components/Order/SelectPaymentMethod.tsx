@@ -1,5 +1,5 @@
 import { useTransactionContext } from '@/hooks/useTransactionContext';
-import { PaymentDirection, PaymentMethodType } from '@/types/new';
+import { Currencies, PaymentDirection, PaymentMethodType } from '@/types/new';
 import {
   Card,
   CardBody,
@@ -13,8 +13,8 @@ import React, { use, useEffect, useState } from 'react';
 
 interface SelectPaymentMethodProps {
   direction: PaymentDirection;
-  tab: string;
-  values: { [key: string]: string[] };
+  tab: PaymentMethodType;
+  values: Currencies;
   valueLabel: string;
   optionLabel: string;
 }
@@ -35,7 +35,11 @@ export const SelectPaymentMethod: React.FC<SelectPaymentMethodProps> = ({
     setSelectedOption(transaction[`${direction}Details`].option);
   }, [tab, transaction, direction]);
 
-  const options = selectedValue ? values[selectedValue] || [] : [];
+  const currencyOptions = selectedValue ? values[selectedValue]?.options : {};
+
+  const optionsList = currencyOptions
+    ? Object.keys(currencyOptions).filter((option) => currencyOptions[option])
+    : [];
 
   const handleChangeValue = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newValue = e.target.value;
@@ -88,7 +92,7 @@ export const SelectPaymentMethod: React.FC<SelectPaymentMethodProps> = ({
           ))}
         </Select>
 
-        {selectedValue ? (
+        {selectedValue || !optionsList.length ? (
           <Select
             size="lg"
             className="w-full min-h-16"
@@ -98,7 +102,7 @@ export const SelectPaymentMethod: React.FC<SelectPaymentMethodProps> = ({
             disabledKeys={[selectedOption]}
             onChange={handleChangeOption}
           >
-            {options.map((option) => (
+            {optionsList.map((option) => (
               <SelectItem key={option} value={option} textValue={option}>
                 {option}
               </SelectItem>
@@ -107,15 +111,19 @@ export const SelectPaymentMethod: React.FC<SelectPaymentMethodProps> = ({
         ) : (
           <Select
             isDisabled
-            className="w-full min-h-16"
+            className="w-full min-h-16 "
             selectorIcon={<Spacer />}
             label={optionLabel}
             labelPlacement="outside"
             disabled
           >
-            <SelectItem key="placeholder" textValue="temporary empty select">
-              <Skeleton className="rounded-lg">
-                <div className="bg-default-300">{''}</div>
+            <SelectItem
+              key="placeholder"
+              textValue="temporary empty select"
+              className=""
+            >
+              <Skeleton className="rounded-lg ">
+                <div className="bg-default-300 ">{''}</div>
               </Skeleton>
             </SelectItem>
           </Select>

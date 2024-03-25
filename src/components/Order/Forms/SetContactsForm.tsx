@@ -9,7 +9,7 @@ import { CryptoInputs } from '../CryptoInputs';
 import { PaymentDirection, PaymentMethodType } from '@/types/new';
 import { Form, Formik, useFormik } from 'formik';
 import { detailsValidationSchema } from '@/schemas/detailsValidationSchema';
-import { ContactsInputs } from '../ContactsInpurs';
+import { ContactsInputs } from '../ContactsInputs';
 
 interface SetDetailsFormProps {
   formId: string;

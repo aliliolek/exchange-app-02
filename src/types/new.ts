@@ -89,18 +89,25 @@ export enum PaymentDirection {
 }
 
 export enum PaymentMethodType {
-  BankTransfer = 'Card',
-  Cash = 'Cash',
-  CryptoWallet = 'Crypto',
+  BankTransfer = 'bank',
+  Cash = 'cash',
+  CryptoWallet = 'crypto',
+}
+
+export enum PaymentOptionType {
+  Bank = 'bank',
+  City = 'city',
+  Network = 'network',
 }
 
 export interface NewPaymentMethod {
   methodType: PaymentMethodType;
   currency: string;
-  option: string;
+  option: PaymentOptionType;
   bank?: string;
   accountNumber?: string;
-  ownerName?: string;
+  city?: string;
+  fullName?: string;
   walletAddress?: string;
 }
 
@@ -123,7 +130,7 @@ export interface Transaction {
   commercialRate: number; // Комерційний курс обміну
   lastFocusedField: PaymentDirection; // Останнє поле, на яке клікнули
   contacts?: Contacts;
-  serviceDetails?: Partial<NewPaymentMethod>; // Метод оплати для віддачі
+  serviceDetails?: NewPaymentMethod; // Метод оплати для віддачі
   status?: TransactionStatus; // Статус транзакції
   createdAt?: Date; // Дата та час створення заявки
   paidAt?: Date; // Дата та час підтвердження оплати користувачем
@@ -202,26 +209,49 @@ export const cardPaymentOptions: CardPaymentOptions = {
   USD: ['Revolut USD', 'Wise USD', 'PayPal USD'],
 };
 
-export const tabsConfiguration = [
-  {
-    type: PaymentMethodType.CryptoWallet,
-    label: PaymentMethodType.CryptoWallet,
-    optionLabel: 'Network',
-    data: cryptoCurrencyNetworks,
-  },
-  {
-    type: PaymentMethodType.Cash,
-    label: PaymentMethodType.Cash,
-    optionLabel: 'City',
-    data: cashCurrencyCities,
-  },
-  {
-    type: PaymentMethodType.BankTransfer,
-    label: PaymentMethodType.BankTransfer,
-    optionLabel: 'Bank',
-    data: cardPaymentOptions,
-  },
-];
+export interface CurrencyOption {
+  [optionName: string]: boolean;
+}
+
+export interface Currency {
+  active: boolean;
+  name: string;
+  options: CurrencyOption;
+}
+
+export interface Currencies {
+  [currencyCode: string]: Currency;
+}
+
+export interface DataStructure {
+  bank: Currencies;
+  cash: Currencies;
+  crypto: Currencies;
+}
+
+export interface TabConfiguration {
+  type: PaymentMethodType;
+  optionLabel: PaymentOptionType;
+  data: Currencies;
+}
+
+// export const tabsConfiguration = [
+//   {
+//     type: PaymentMethodType.CryptoWallet,
+//     optionLabel: 'Network',
+//     data: cryptoCurrencyNetworks,
+//   },
+//   {
+//     type: PaymentMethodType.Cash,
+//     optionLabel: 'City',
+//     data: cashCurrencyCities,
+//   },
+//   {
+//     type: PaymentMethodType.BankTransfer,
+//     optionLabel: 'Bank',
+//     data: cardPaymentOptions,
+//   },
+// ];
 
 export interface InputDetailsProps {
   currency: string;

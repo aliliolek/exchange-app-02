@@ -1,3 +1,4 @@
+import TestFirebase from '@/components/TestFirebase/TestFirebase';
 import { TestXata } from '@/components/TestXata/TestXata';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </section>
       <section className="w-full max-w-lg p-6">
         <TestXata />
+        <TestFirebase />
       </section>
     </main>
   );

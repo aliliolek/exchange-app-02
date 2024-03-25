@@ -9,6 +9,7 @@ import RateIndicator from './RateIndicator';
 import { calcExchangeValues } from '@/utils/calc';
 import { FormActionButtons } from './Forms/FormActionButtons';
 import { SetContactsForm } from './Forms/SetContactsForm';
+import ServiceDetailsCard from './ServiceDetailsCard';
 
 interface FormContextType {
   isLoadingFrom: boolean;
@@ -76,7 +77,7 @@ export const Order = () => {
         {transaction.step === 2 && (
           <SetContactsForm formId={getFormId(transaction.step)} />
         )}
-        {transaction.step === 2 && <Spinner />}
+        {transaction.step === 3 && <ServiceDetailsCard />}
         <FormActionButtons formId={getFormId(transaction.step)} />
       </Card>
     </FormContext.Provider>

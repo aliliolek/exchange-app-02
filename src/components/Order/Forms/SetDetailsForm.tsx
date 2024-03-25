@@ -68,7 +68,7 @@ export const SetDetailsForm: React.FC<SetDetailsFormProps> = ({ formId }) => {
             option: transaction.fromDetails.option,
             bank: '',
             accountNumber: '',
-            ownerName: '',
+            fullName: '',
             walletAdress: '',
           },
           toDetails: {
@@ -77,7 +77,7 @@ export const SetDetailsForm: React.FC<SetDetailsFormProps> = ({ formId }) => {
             option: transaction.toDetails.option,
             bank: '',
             accountNumber: '',
-            ownerName: '',
+            fullName: '',
             walletAdress: '',
           },
         }}
